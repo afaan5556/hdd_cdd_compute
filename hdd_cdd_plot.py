@@ -1,7 +1,6 @@
 import pandas as pd
 from bokeh.io import show, output_file
 from bokeh.plotting import figure, show, output_file
-from tmy_header_city_state_extractor import get_head
 
 extract_data = pd.read_csv('hdd_cdd.csv')
 

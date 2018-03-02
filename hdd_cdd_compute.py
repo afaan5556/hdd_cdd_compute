@@ -1,8 +1,6 @@
 import pandas as pd
 import os
 import numpy as np
-from bokeh.io import show, output_file
-from bokeh.plotting import figure, show, output_file
 from tmy_header_city_state_extractor import get_head
 
 DIRECTORY = '../tmy_data/'
@@ -28,7 +26,6 @@ def calc_HDD_CDD(df):
 	HDD = int(sum(df['hourly_HDD'])/24)
 	CDD = int(sum(df['hourly_CDD'])/24)
 	return HDD, CDD
-
 
 def main_func():
 	# Walk files to:
